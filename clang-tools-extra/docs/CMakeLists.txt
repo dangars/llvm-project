@@ -84,6 +84,7 @@ if (DOXYGEN_FOUND)
 
     if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
       install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doxygen/html
+        USE_SOURCE_PERMISSIONS
         DESTINATION docs/html)
     endif()
   endif()

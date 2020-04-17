@@ -97,6 +97,7 @@ if (LLVM_ENABLE_DOXYGEN)
     # appending html/ into LLVM_INSTALL_DOXYGEN_HTML_DIR.
     install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doxygen/html/.
       COMPONENT doxygen-html
+      USE_SOURCE_PERMISSIONS
       DESTINATION "${LLVM_INSTALL_DOXYGEN_HTML_DIR}")
   endif()
 endif()

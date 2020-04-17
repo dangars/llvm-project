@@ -969,6 +969,7 @@ if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
     DESTINATION include
     COMPONENT llvm-headers
     FILES_MATCHING
+    USE_SOURCE_PERMISSIONS
     PATTERN "*.def"
     PATTERN "*.h"
     PATTERN "*.td"
@@ -981,6 +982,7 @@ if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
     DESTINATION include
     COMPONENT llvm-headers
     FILES_MATCHING
+    USE_SOURCE_PERMISSIONS
     PATTERN "*.def"
     PATTERN "*.h"
     PATTERN "*.gen"

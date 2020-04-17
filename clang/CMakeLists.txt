@@ -375,6 +375,7 @@ include_directories(BEFORE
 if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
   install(DIRECTORY include/clang include/clang-c
     DESTINATION include
+    USE_SOURCE_PERMISSIONS
     FILES_MATCHING
     PATTERN "*.def"
     PATTERN "*.h"
@@ -384,6 +385,7 @@ if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
 
   install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include/clang
     DESTINATION include
+    USE_SOURCE_PERMISSIONS
     FILES_MATCHING
     PATTERN "CMakeFiles" EXCLUDE
     PATTERN "*.inc"
